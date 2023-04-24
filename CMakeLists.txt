@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 # Add designs
 add_subdirectory(Builder)
+add_subdirectory(Factory)
 
 # Add other
 #add_subdirectory(<>)
