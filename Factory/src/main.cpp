@@ -1,5 +1,10 @@
 #include <iostream>
+#include "Person.hpp"
+
 
 int main() {
-	std::cout << "Hi" << std::endl;
+	PersonFactory pf;
+
+	Person p = pf.create_person("Anafura");
+	std::cout << p;
 }
