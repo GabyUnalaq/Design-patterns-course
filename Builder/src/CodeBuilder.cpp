@@ -1,32 +1,39 @@
 #include "CodeBuilder.hpp"
 
-
-Field::Field(const string& name, const string& type) : name(name), type(type) {
-
+// FIELD
+ostream& operator<<(ostream& os, const Field& f) {
+    os << f.type << ' ' << f.name << ";";\
+    return os;
 }
 
-string Field::str() {
-    return type + ' ' + name + ';';
+// CLASS
+ostream& operator<<(ostream& os, const Class& c) {
+    os <<
+        "class " << c.class_name << endl <<
+        '{' << endl;
+    for (auto& field : c.fields)
+    {
+        os << "  " << field << endl;
+    }
+    os << "};";
+    return os;
 }
 
-
-CodeBuilder::CodeBuilder(const string& class_name) : class_name(class_name) {
-
+// CLASS_BUILDER
+ClassBuilder::ClassBuilder(const string& class_name) {
+    cls.class_name = class_name;
 }
 
-CodeBuilder& CodeBuilder::add_field(const string& name, const string& type) {
-    fields.push_back(Field(name, type));
+ClassBuilder& ClassBuilder::add_field(const string& name, const string& type) {
+    cls.fields.push_back(Field(name, type));
     return *this;
 }
 
-ostream& operator<<(ostream& os, const CodeBuilder& obj) {
-    os <<
-        "class " << obj.class_name << endl <<
-        '{' << endl;
-    for (auto& field : obj.fields)
-    {
-        os << "  " << field.type << ' ' << field.name << ';' << endl;
-    }
-    os << "};";
+ClassBuilder::operator Class() const {
+    return cls;
+}
+
+ostream& operator<<(ostream& os, const ClassBuilder& cb) {
+    os << cb.cls;
     return os;
 }
