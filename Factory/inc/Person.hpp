@@ -7,12 +7,15 @@
 using namespace std;
 
 
-struct Person
+class Person
 {
+private:
     int id;
     string name;
 
+public:
     Person() = default;
+    Person(int id, const string& str) : id{ id }, name{ str } {};
 
     friend ostream& operator<<(ostream& os, Person& p) {
         os << p.id << ' ' << p.name << std::endl;
@@ -23,7 +26,7 @@ struct Person
 
 class PersonFactory
 {
-public:
+private:
     int id{ 0 };
 
 public:
