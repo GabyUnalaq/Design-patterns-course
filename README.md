@@ -9,6 +9,7 @@ The repo contains the coding exercises from the end of each design pattern.
 ## Creational Patterns
 
  - [Builder](Builder/)
+ - [Factory](Factory/)
  
 ## Structural Patterns
 
