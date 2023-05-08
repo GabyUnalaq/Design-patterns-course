@@ -1,5 +1,3 @@
-include_directories(inc)
+add_executable(Singleton src/main.cpp src/Singleton.cpp)
 
-set(Singleton src/Singleton.cpp inc/Singleton.hpp)
-
-add_executable(Singleton src/main.cpp ${Singleton})
+target_include_directories(Singleton PRIVATE inc)

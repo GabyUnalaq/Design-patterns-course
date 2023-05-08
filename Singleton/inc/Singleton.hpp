@@ -33,8 +33,14 @@ public:
 
 // Singleton Tester
 struct SingletonTester {
-  template <typename T>
-  bool is_singleton(std::function<T* ()> factory);
+  template <typename T> //  Template functions should have their definition in the hpp
+  bool is_singleton(std::function<T* ()> factory) {
+	  T* obj1 = factory();
+	  T* obj2 = factory();
+	  if (obj1 == obj2)  // Comparing the addresses
+		  return true;
+	  return false;
+  }
 };
 
 #endif // SINGLETON_HPP
