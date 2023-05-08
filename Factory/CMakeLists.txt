@@ -1,5 +1,3 @@
-include_directories(inc)
+add_executable(Factory src/main.cpp src/Person.cpp)
 
-set(Person src/Person.cpp inc/Person.hpp)
-
-add_executable(Factory src/main.cpp ${Person})
+target_include_directories(Factory PRIVATE inc/)
