@@ -1,5 +1,3 @@
-include_directories(inc)
+add_executable(Prototype src/main.cpp src/Line.cpp)
 
-set(Line src/Line.cpp inc/Line.hpp)
-
-add_executable(Prototype src/main.cpp ${Line})
+target_include_directories(Prototype PRIVATE inc/)
