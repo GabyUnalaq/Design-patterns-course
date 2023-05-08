@@ -10,6 +10,7 @@ The repo contains the coding exercises from the end of each design pattern.
 
  - [Builder](Builder/)
  - [Factory](Factory/)
+ - [Singleton](Singleton/)
  
 ## Structural Patterns
 
