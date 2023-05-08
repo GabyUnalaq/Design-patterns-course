@@ -1,5 +1,3 @@
-include_directories(inc)
+add_executable(Builder src/main.cpp src/CodeBuilder.cpp)
 
-set(CodeBuilder src/CodeBuilder.cpp inc/CodeBuilder.hpp)
-
-add_executable(Builder src/main.cpp ${CodeBuilder})
+target_include_directories(Builder PRIVATE inc/)
