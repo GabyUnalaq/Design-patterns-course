@@ -10,8 +10,30 @@ The repo contains the coding exercises from the end of each design pattern.
 
  - [Builder](Builder/)
  - [Factory](Factory/)
+ - [Prototype](Prototype/)
  - [Singleton](Singleton/)
+ - [Prototype](Prototype/)
  
-## Structural Patterns
+## Structural Patterns (Without Façade)
+
+ - [Adapter](Adapter/)
+ - [Bridge](Bridge/)
+ - [Composite](Composite/)
+ - [Decorator](Decorator/)
+ - [Flyweight](Flyweight/)
+ - [Proxy](Proxy/)
 
 ## Behavioral Patterns
+
+ - [Chain of responsibility](Chain_of_Responsibility/)
+ - [Command](Command/)
+ - [Interpreter](Interpreter/)
+ - [Iterator](Iterator/)
+ - [Mediator](Mediator/)
+ - [Memento](Memento/)
+ - [Observer](Observer/)
+ - [State](State/)
+ - [Strategy](Strategy/)
+ - [Template Method](Template_Method/)
+ - [Visitor](Visitor/)
+ 
