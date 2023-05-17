@@ -12,6 +12,7 @@ The repo contains the coding exercises from the end of each design pattern.
  - [Factory](Factory/)
  - [Prototype](Prototype/)
  - [Singleton](Singleton/)
+ - [Prototype](Prototype/)
  
 ## Structural Patterns (Without Façade)
 

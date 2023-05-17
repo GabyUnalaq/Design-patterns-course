@@ -13,6 +13,7 @@ endif()
 # Add designs
 add_subdirectory(Builder)
 add_subdirectory(Factory)
+add_subdirectory(Prototype)
 add_subdirectory(Singleton)
 add_subdirectory(Bridge)
 
