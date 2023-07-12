@@ -15,6 +15,7 @@ add_subdirectory(Builder)
 add_subdirectory(Factory)
 add_subdirectory(Singleton)
 add_subdirectory(Prototype)
+add_subdirectory(Chain_of_Responsibility)
 
 # Add other
 #add_subdirectory(<>)
